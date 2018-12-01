@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>PLANNER</title>
+	</head>
+	<body>
+		<div layout:fragment="content">
+			<h1>PLANNER</h1>
+			<hr />
+			<table class= "table" >
+			<tr>
+			<th><a href=${planner.ano.mes{0}>JAN</a></th> 
+			<th>FEV</th>
+			<th>MAR</th>
+			<th>ABR</th>
+			</tr>
+			<tr>
+			<th>MAI</th> 
+			<th>JUN</th>
+			<th>JUL</th>
+			<th>AGO</th>
+			</tr>
+			<tr>
+			<th>SET</th> 
+			<th>OUT</th>
+			<th>NOV</th>
+			<th>DEZ</th>
+			</tr>	
+			</table>
+				
+			<a th:href="@{/planner}" class="btn btn-primary" >Voltar</a>
+			
+		</div>
+	</body>
+</html>
